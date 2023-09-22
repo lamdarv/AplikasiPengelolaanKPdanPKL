@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: management-content-service
+
+server:
+  port: 8084
+  servlet:
+    context-path: /management-content
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://192.168.229.22:8761/eureka
+  instance:
+    hostname: localhost

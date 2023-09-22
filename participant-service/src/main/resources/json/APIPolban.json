@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Peserta A",
+    "nim": "100000001",
+    "ipk": 4,
+    "prodi": "D3",
+    "mata_kuliah": [
+      {
+        "kode": "16TKO1054",
+        "nama": "Dasar-Dasar Pemrograman",
+        "nilai": 80
+      },
+      {
+        "kode": "16TKO2044",
+        "nama": "Struktur Data & Algoritma",
+        "nilai": 91
+      },
+      {
+        "kode": "16TKO3014",
+        "nama": "Basis Data",
+        "nilai": 89
+      },
+      {
+        "kode": "16TKO4024",
+        "nama": "Pengembangan Perangkat Lunak 1",
+        "nilai": 87
+      },
+      {
+        "kode": "16TKO4063",
+        "nama": "Proyek Perangkat Lunak 4",
+        "nilai": 80
+      }
+    ],
+    "sakit": 2,
+    "izin": 7,
+    "alpa": 5
+  },
+  {
+    "name": "Peserta B",
+    "nim": "100000002",
+    "ipk": 4,
+    "prodi": "D3",
+    "mata_kuliah": [
+      {
+        "kode": "16TKO1054",
+        "nama": "Dasar-Dasar Pemrograman",
+        "nilai": 96
+      },
+      {
+        "kode": "16TKO2044",
+        "nama": "Struktur Data & Algoritma",
+        "nilai": 70
+      },
+      {
+        "kode": "16TKO3014",
+        "nama": "Basis Data",
+        "nilai": 100
+      },
+      {
+        "kode": "16TKO4024",
+        "nama": "Pengembangan Perangkat Lunak 1",
+        "nilai": 82
+      },
+      {
+        "kode": "16TKO4063",
+        "nama": "Proyek Perangkat Lunak 4",
+        "nilai": 91
+      }
+    ],
+    "sakit": 3,
+    "izin": 10,
+    "alpa": 4
+  }
+]s

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: account-service
+
+server:
+  port: 8081
+  servlet:
+    context-path: /account
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    # Necessary for Docker as it doesn't have DNS entries
+    prefer-ip-address: true
+    # Necessary for Docker otherwise you will get 172.0.0.x IP
+    ip-address: 192.168.229.141

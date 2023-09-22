@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: account-service
+          uri: lb://account-service
+          predicates:
+            - Path=/account/**
+        - id: participant-service
+          uri: lb://participant-service
+          predicates:
+            - Path=/participant/**
+        - id: company-service
+          uri: lb://company-service
+          predicates:
+            - Path=/company/**
+        - id: management-content-service
+          uri: lb://management-content-service
+          predicates:
+            - Path=/management-content/**
+        - id: mapping-service
+          uri: lb://mapping-service
+          predicates:
+            - Path=/mapping/**
+        - id: grade-service
+          uri: lb://grade-service
+          predicates:
+            - Path=/grade/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:60000"
+            allowedMethods: "GET,POST,PUT,DELETE,OPTIONS"
+            allowedHeaders: "*"
+            allowCredentials: "true"
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  # instance:
+  #   # Necessary for Docker as it doesn't have DNS entries
+  #   prefer-ip-address: true
+  #   # Necessary for Docker otherwise you will get 172.0.0.x IP
+  #   ip-address: 192.168.229.140
